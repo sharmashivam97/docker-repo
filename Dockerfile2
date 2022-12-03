@@ -1,0 +1,11 @@
+FROM python:alpine
+
+# adding a maintainer to the image
+# this only helps with documentation
+LABEL maintainer="mkf@mkf.com"
+
+COPY . .
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT [ "python", "main.py" ]
