@@ -20,7 +20,7 @@ def main():
     # reading the NAME environment variable
     # if it doesn't exist, we will use "stranger" as default
     name = os.getenv("NAME", "stranger")
-    print(f"Hello, {name}!")
+    print(f"Hello bro, {name}!")
 
 if __name__ == "__main__":
     main()
